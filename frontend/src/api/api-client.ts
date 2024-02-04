@@ -1,7 +1,7 @@
 import { IloginInput } from "@/pages/Login";
 import { IFormInput } from "@/pages/Register";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = import.meta.env.VITE_API_URL || "";
 
 export const register = async (formData: IFormInput) => {
   try {
