@@ -7,11 +7,7 @@ import authRouter from "./Routes/authRoute";
 import cookieParser from "cookie-parser";
 import path from "path";
 
-mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string).then(() => {
-  console.log(
-    "Connected to MongoDB from :" + process.env.MONGODB_CONNECTION_STRING
-  );
-});
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string);
 
 const app = express();
 
